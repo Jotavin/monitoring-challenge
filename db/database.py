@@ -12,7 +12,7 @@ conn = psycopg2.connect(
 conn.autocommit = True
 cursor = conn.cursor()
 
-cursor.execute("CREATE DATABASE if not exists transactions;")
+cursor.execute("CREATE DATABASE transactions;")
 
 conn.commit()
 cursor.close()
